@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/chooseDifficulty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <RadioButton
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="2X2" />
+
+        <RadioButton
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3X3" />
+
+        <RadioButton
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4X4" />
+
+        <RadioButton
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5X5" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/chooseDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Difficulty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:id="@+id/choose_image"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_button"
+        android:text="Choose Image"
+        android:textColor="@color/button_text"/>
+
+    <TextView
+        android:id="@+id/choose_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        android:layout_marginTop="43dp"
+        android:text="Choose Type"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/choose_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <RadioButton
+            android:id="@+id/moving_puzzle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Moving Puzzle" />
+
+        <RadioButton
+            android:id="@+id/swip_puzzle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swipping Puzzle" />
+
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>

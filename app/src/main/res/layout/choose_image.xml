@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chooseimage">
+
+
+
+    <GridView
+        android:id="@+id/image_choosing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:numColumns="auto_fit" />
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0sp">
+
+        <Button
+            android:id="@+id/type_level"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/button_text"
+            android:background="@color/main_button"
+            android:layout_weight="1"
+            android:text="Type / Level" />
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_button"
+            android:textColor="@color/button_text"
+            android:layout_weight="1"
+            android:text="Gallery" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="150dip"
+            android:layout_height="55dip"
+            android:layout_weight="1"
+            android:textColor="@color/button_text"
+            android:background="@color/main_button"
+            android:text="Camera" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

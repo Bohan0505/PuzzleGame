@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">PuzzleGame</string>
+    <string name="instruction1">
+        This app has two kinds of puzzle games.
+    </string>
+    <string name="instruction2">
+        Moving puzzle:
+    </string>
+    <string name="instruction3">
+        Click the piece besides the blank to move the image piece
+        to the blank position
+    </string>
+    <string name="instruction4">
+        Swipping puzzle:
+    </string>
+    <string name="instruction5">
+        Click two pieces to swip the two pieces
+    </string>
+    <string name="instruction6">
+
+    </string>
+    <string name="instruction7">
+        You can select the initial level in the home page. Every time you finish the level, you can
+        come to the next level.
+    </string>
+    <string name="instruction9">
+        When you start the game, there is a steps counter to count the number of steps you have used.
+    </string>
+    <string name="instruction10">
+        There is a time limit for each level. If you did not finish the game within the time limit,
+        you cannot continue the game. You can choose either restart or give up.
+    </string>
+    <string name="instruction8">
+        You can choose the default image, or choose image from the phone gallery, or take a picture through the camera.
+    </string>
+    <string name="instruction11">
+        In the game, you can show the original image. Also, you can reset the game. You can also change the image and level.
+    </string>
+    <string name="instruction12">
+        You can change between the two types of game.
+    </string>
+    <string name="instruction13">
+
+    </string>
+
+</resources>

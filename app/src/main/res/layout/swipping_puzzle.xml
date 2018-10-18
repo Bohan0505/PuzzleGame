@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_puzzle_main_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chooseimage">
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Steps: "
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_puzzle_main_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="50dip"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Time: "
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_puzzle_main_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0sp">
+
+        <Button
+            android:id="@+id/original_image"
+            android:layout_width="100dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/button_text"
+            android:background="@color/main_button"
+            android:layout_weight="1"
+            android:text="Show          Image" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="100dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_button"
+            android:textColor="@color/button_text"
+            android:layout_weight="1"
+            android:text="Reset      Game " />
+
+        <Button
+            android:id="@+id/change_image"
+            android:layout_width="100dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_button"
+            android:textColor="@color/button_text"
+            android:layout_weight="1"
+            android:text="Change Image" />
+
+        <Button
+            android:id="@+id/moving_puzzle"
+            android:layout_width="100dip"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_button"
+            android:textColor="@color/button_text"
+            android:layout_weight="1"
+            android:text="Moving Puzzle" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_puzzle_main_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_puzzle_main_btns"
+        android:layout_below="@id/ll_puzzle_main_spinner"
+        android:layout_centerInParent="true"
+        android:layout_margin="8sp" />
+
+</RelativeLayout>
